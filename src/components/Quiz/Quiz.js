@@ -83,7 +83,7 @@ export default class Quiz extends React.Component {
                     (<div className='score-section'>
                         You scored {this.state.score} out of {this.state.questions.length}
                     </div>) : (
-                        <div>
+                        <>
                             <div className='question-section'>
                                 <div className='question-count'>
                                     <span>Question {this.state.currentQuestion + 1}</span>/ {this.state.questions.length}
@@ -96,7 +96,7 @@ export default class Quiz extends React.Component {
                                 ))}
 
                             </div>
-                        </div>
+                        </>
                     )}
             </div>
         )
